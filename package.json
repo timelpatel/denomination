@@ -1,0 +1,19 @@
+{
+  "name": "denomination",
+  "version": "1.0.0",
+  "description": "Calculate the change given to a customer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/timelpatel/denomination.git"
+  },
+  "author": "Timel Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timelpatel/denomination/issues"
+  },
+  "homepage": "https://github.com/timelpatel/denomination#readme"
+}

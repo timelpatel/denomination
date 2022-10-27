@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cash denomination</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="denomination.js"></script>
+    <script>
+      function getChange(e) {
+        e.preventDefault();
+        const amount = document.getElementById('inputAmount').value;
+        updateOuput(getDenomination(amount));
+      }
+
+      function updateOuput(arr) {
+        const coins = [2, 1, 0.5, 0.2, 0.1, 0.05, 0.02, 0.01];
+        let text = "";
+
+        for (let i = 0; i < arr.length; i++) {
+          text += coins[i] + ": " + arr[i] + "<br>";
+        }
+
+        document.getElementById('output').innerHTML =  "<p>" + text + "</p>";
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <input id="inputAmount" type="number" />
+      <button onclick="getChange(event)">Get Change</button>
+    </form>
+
+    <div id="output"></div>
+  </body>
+</html>
